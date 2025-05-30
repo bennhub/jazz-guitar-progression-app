@@ -1,8 +1,7 @@
-# 🎵 Jazz Guitar Chord Progressions App
-
+# Jazz Guitar Chord Progressions App
 An interactive web application featuring 118+ jazz chord progressions across all major jazz styles, with guitar chord diagrams and audio playback.
 
-## ✨ Features
+##  Features
 
 - **118+ Jazz Progressions** across all styles (Traditional, Bebop, Cool, Hard Bop, Modal, Fusion, Contemporary, Latin, etc.)
 - **Guitar Chord Diagrams** with fingering positions
@@ -12,7 +11,7 @@ An interactive web application featuring 118+ jazz chord progressions across all
 - **Transpose Tool** - Change key signatures (+/- 7 semitones)
 - **Contemporary Pop** - Includes modern songs with jazzy harmony (Billie Eilish, H.E.R., etc.)
 
-## 🎯 Jazz Styles Included
+## Jazz Styles Included
 
 - Traditional Jazz Standards
 - Bebop
@@ -28,11 +27,11 @@ An interactive web application featuring 118+ jazz chord progressions across all
 - Gypsy Jazz
 - Soul Jazz
 
-## 🚀 Live Demo
+## Live Demo (coming soon)
 
 [View Live App](https://your-username.github.io/jazz-guitar-chord-progressions)
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - React 18
 - JavaScript ES6+
@@ -40,7 +39,7 @@ An interactive web application featuring 118+ jazz chord progressions across all
 - Lucide React (icons)
 - CSS3 (responsive design)
 
-## 📱 Installation & Setup
+## Installation & Setup
 
 ```bash
 # Clone the repository
