@@ -27,9 +27,9 @@ An interactive web application featuring 118+ jazz chord progressions across all
 - Gypsy Jazz
 - Soul Jazz
 
-## Live Demo (coming soon)
+## Live Demo 
 
-[View Live App](https://your-username.github.io/jazz-guitar-chord-progressions)
+[View Live App](https://bennhub.github.io/jazz-guitar-progression-app/)
 
 ##  Technologies Used
 
