@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jazz-guitar-progression-app/static/css/main.c1640875.css",
+    "main.js": "/jazz-guitar-progression-app/static/js/main.eb372828.js",
+    "static/js/246.a2106537.chunk.js": "/jazz-guitar-progression-app/static/js/246.a2106537.chunk.js",
+    "static/js/453.928824a1.chunk.js": "/jazz-guitar-progression-app/static/js/453.928824a1.chunk.js",
+    "index.html": "/jazz-guitar-progression-app/index.html",
+    "main.c1640875.css.map": "/jazz-guitar-progression-app/static/css/main.c1640875.css.map",
+    "main.eb372828.js.map": "/jazz-guitar-progression-app/static/js/main.eb372828.js.map",
+    "246.a2106537.chunk.js.map": "/jazz-guitar-progression-app/static/js/246.a2106537.chunk.js.map",
+    "453.928824a1.chunk.js.map": "/jazz-guitar-progression-app/static/js/453.928824a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1640875.css",
+    "static/js/main.eb372828.js"
+  ]
+}
