@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🎵 Jazz Guitar Chord Progressions App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application featuring 118+ jazz chord progressions across all major jazz styles, with guitar chord diagrams and audio playback.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **118+ Jazz Progressions** across all styles (Traditional, Bebop, Cool, Hard Bop, Modal, Fusion, Contemporary, Latin, etc.)
+- **Guitar Chord Diagrams** with fingering positions
+- **Audio Playback** - Click any chord to hear it played
+- **Style Filtering** - Browse by jazz era/style
+- **Search Functionality** - Find progressions by song title, artist, chord, or style
+- **Transpose Tool** - Change key signatures (+/- 7 semitones)
+- **Contemporary Pop** - Includes modern songs with jazzy harmony (Billie Eilish, H.E.R., etc.)
 
-### `npm start`
+## 🎯 Jazz Styles Included
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Traditional Jazz Standards
+- Bebop
+- Cool Jazz  
+- Hard Bop
+- Modal Jazz
+- Free Jazz
+- Fusion
+- Contemporary Jazz
+- Latin Jazz (Bossa Nova, Samba, Afro-Cuban)
+- Smooth Jazz
+- Swing Era
+- Gypsy Jazz
+- Soul Jazz
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Live Demo
 
-### `npm test`
+[View Live App](https://your-username.github.io/jazz-guitar-chord-progressions)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies Used
 
-### `npm run build`
+- React 18
+- JavaScript ES6+
+- Tone.js (for audio synthesis)
+- Lucide React (icons)
+- CSS3 (responsive design)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📱 Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/jazz-guitar-chord-progressions.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Navigate to project directory
+cd jazz-guitar-chord-progressions
 
-### `npm run eject`
+# Install dependencies
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Start development server
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Build for production
+npm run build
