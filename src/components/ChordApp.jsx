@@ -510,12 +510,28 @@ const toggleFavorite = (id) => {
       <div className="container">
         {/* Header */}
         <div className="app-header">
-          <div className="header-title">
-            <Music size={40} />
-            <h1>Jazz Guitar Chord Progressions</h1>
-          </div>
-          <p className="header-subtitle">Explore hundreds of jazz chord progressions across all styles</p>
-        </div>
+  {/* Hayzer Logo Title */}
+  <div className="title" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+    <span style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>Hayzer</span>
+    <span className="lightning">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="#FFD700"  stroke="#000"  strokeWidth="1">
+        <path d="M13 2L4.5 12.5H11L10 22L18.5 11.5H12L13 2Z"></path>
+      </svg>
+    </span>
+    <span style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>Apps</span>
+  </div>
+
+  {/* Main App Title */}
+  <div className="header-title" style={{ marginTop: '1rem' }}>
+    <Music size={40} />
+    <h1>Jazz Guitar Chord Progressions</h1>
+  </div>
+
+  <p className="header-subtitle">
+    Explore hundreds of jazz chord progressions across all styles
+  </p>
+</div>
+
 
         {/* Style Filter */}
         <div className="filter-section">
