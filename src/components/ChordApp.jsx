@@ -453,10 +453,50 @@ const toggleFavorite = (id) => {
 
   const ProgressionCard = ({ progression }) => {
     const isFavorite = favorites.has(progression.id);
-    
+    const isExpanded = selectedProgression === progression.id;
+    const progressionHeaderRef = useRef(null);
+  
+    const handleShowChords = () => {
+      console.log('handleShowChords called');
+      const newSelectedProgression = selectedProgression === progression.id ? null : progression.id;
+      console.log('Setting selected progression to:', newSelectedProgression);
+      setSelectedProgression(newSelectedProgression);
+      
+      // If expanding, scroll after React has updated the DOM
+      if (newSelectedProgression === progression.id) {
+        console.log('Should scroll - using requestAnimationFrame');
+        
+        // Use requestAnimationFrame to wait for DOM update
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            console.log('RequestAnimationFrame executed, progressionHeaderRef.current:', progressionHeaderRef.current);
+            if (progressionHeaderRef.current) {
+              console.log('Scrolling to header');
+              progressionHeaderRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+              });
+            } else {
+              console.log('Header ref still null, trying alternative scroll');
+              // Fallback: scroll to the card itself
+              const cardElement = document.getElementById(`progression-card-${progression.id}`);
+              if (cardElement) {
+                cardElement.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                  inline: 'nearest'
+                });
+              }
+            }
+          });
+        });
+      }
+    };
+  
     return (
-      <div className="progression-card">
-        <div className="progression-header">
+      <div id={`progression-card-${progression.id}`} className="progression-card">
+        <div ref={progressionHeaderRef} className="progression-header">
           <div className="progression-info">
             <h3 className="progression-name">{progression.name}</h3>
             <div className="progression-meta">
@@ -474,11 +514,11 @@ const toggleFavorite = (id) => {
               <Heart size={20} />
             </button>
             <button
-              onClick={() => setSelectedProgression(selectedProgression === progression.id ? null : progression.id)}
+              onClick={handleShowChords}
               className="show-chords-btn"
             >
               <Play size={16} />
-              {selectedProgression === progression.id ? 'Hide' : 'Show'} Chords
+              {isExpanded ? 'Hide' : 'Show'} Chords
             </button>
           </div>
         </div>
@@ -491,7 +531,7 @@ const toggleFavorite = (id) => {
           ))}
         </div>
         
-        {selectedProgression === progression.id && (
+        {isExpanded && (
           <div className="chord-diagrams-section">
             <h4 className="diagrams-title">Chord Fingerings:</h4>
             <div className="chord-diagrams-grid">

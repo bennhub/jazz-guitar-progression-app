@@ -1,5 +1,10 @@
 /* Jazz Chord App Styles */
 
+/* Enable smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -131,6 +136,7 @@
   padding: 1.5rem;
   border-left: 4px solid #3b82f6;
   transition: box-shadow 0.2s ease;
+  scroll-margin-top: 0;
 }
 
 .progression-card:hover {
@@ -240,9 +246,21 @@
 
 /* Chord Diagrams Section */
 .chord-diagrams-section {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid #e5e7eb;
+  transition: all 0.3s ease-in-out;
+  animation: expandSection 0.3s ease-out;
+}
+
+@keyframes expandSection {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 2000px;
+  }
 }
 
 .diagrams-title {
@@ -252,9 +270,18 @@
 }
 
 .chord-diagrams-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  animation: fadeInUp 0.4s ease-out 0.1s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Chord Diagram */
@@ -582,6 +609,7 @@
   .progression-header {
     flex-direction: column;
     align-items: flex-start;
+    scroll-margin-top: 0;
   }
   
   .progression-actions {
